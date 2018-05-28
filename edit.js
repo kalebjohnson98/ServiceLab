@@ -8,9 +8,7 @@
             // vm.contact = "kaleb.j.business@gmail.com";
             // vm.bio = "Web based entrepreneur, but I hate spiders.";
             vm.user = userService.getUser();
-            vm.update = function(){
-                userService.setUser(vm.user);
-            }
+            
 
         }
     }

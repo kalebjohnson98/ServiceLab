@@ -6,9 +6,10 @@
 </head>
 
 <body>
-    <pro></pro>
-    <edit></edit>
-
+    <pro ng-hide="showme"></pro>
+    <button ng-hide="btn" ng-click="showme=true; btn=true">Edit Profile</button>
+    <edit ng-show="showme" ng-model="showme"></edit>
+    <button ng-show="btn" ng-click="showme=false; btn=false">Update Profile</button>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
